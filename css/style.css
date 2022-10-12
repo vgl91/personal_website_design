@@ -74,7 +74,7 @@ section{
 	width: 100%;
 	position: relative;
 	/*poner como background la url de una imagen mia*/
-	background: var(--bg-color);
+	background: url(--bg-color);
 	background-size: cover;
 	background-position: center;
 	display: flex;
