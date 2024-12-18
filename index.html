@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal portfolio website design</title>
+	<title>Victor Guilarte Portfolio</title>
 	<!---custom css link--->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -14,18 +14,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <meta name="description" content="Victor Guilarte - Front-End Developer Portfolio">
+  <meta name="keywords" content="frontend, developer, portfolio, web development">
+
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" as="style">
+
 </head>
 <body>
 
 	<!---header--->
 	<header>
-		<a href="#" class="logo"><img src=""></a>
-		<div class="bx bx-menu" id="menu-icon"></div>
+		<a href="#" class="logo" aria-label="Home">
+			<img src="img/logo.png" alt="Victor Guilarte Logo" width="135" height="40">
+		</a>
+		<button class="bx bx-menu" id="menu-icon" aria-label="Toggle menu"></button>
 
 		<ul class="navbar">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About Me</a></li>
-			<li><a href="#services">Services</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#skills">Skills</a></li>
 			<li><a href="#portfolio">My Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -35,72 +44,94 @@
 	<section class="home" id="home">
 		<div class="home-text">
 			<h4>Hello</h4>
-			<h1>I'm Victor <br> Guil<span>arte</span></h1>
+			<h1>I'm Victor <br> <span>Guilarte</span></h1>
 			<h3>Front-End Developer</h3>
-			<a href="mailto: vaglegra91@gmail.com" class="btn">Hire Me</a>
+			<a href="mailto: vaglegra91@gmail.com" class="btn">Get in touch</a>
+			<a href="path/to/your/cv.pdf" class="btn" download>
+				<i class='bx bx-download'></i>
+				Download CV
+			</a>
 		</div>
 	</section>
 
 	<!---about--->
 	<section class="about" id="about">
 		<div class="about-img">
-			<img src="img/perfil.png">
+			<div class="img-container">
+				<img src="img/perfil.png" alt="Victor Guilarte Profile Picture">
+				<div class="img-overlay"></div>
+			</div>
 		</div>
 
 		<div class="about-text">
 			<h2>About Me</h2>
-			<h4>Hi, Im Here To Help Your Next Project</h4>
-			<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An .ac porta sem turpis quis leo. Nulla in feugiat elit.</p>
-			<div class="about-gri">
-				<div class="about-in">
-					<h5> HTML</h5>
-					<div class="skills__bar skills__bar--90"></div>
-				</div>
-
-				<div class="about-in">
-					<h5> CSS</h5>
-					<div class="skills__bar skills__bar--60"></div>
-				</div>
-
-				<div class="about-in">
-					<h5> JavaScript</h5>
-					<div class="skills__bar skills__bar--40"></div>
-				</div>
-
-				<div class="about-in">
-					<h5> Python</h5>
-					<div class="skills__bar skills__bar--60"></div>
-				</div>
-				<div class="about-in">
-					<h5> Github</h5>
-					<div class="skills__bar skills__bar--70"></div>
-				</div>
-				<div class="about-in">
-					<h5> Odoo</h5>
-					<div class="skills__bar skills__bar--80"></div>
-				</div>
-			</div>
+			<h4>Hi, I'm Here To Help Your Next Project</h4>
+			<p>I am a Full-Stack developer with .Net, having 2 years of professional experience since 2023. I have participated in 
+				the design, development, and migration of enterprise systems, specializing in web financial applications, applying 
+				agile methodologies (Scrum) to ensure the rapid and efficient delivery of software solutions.  I possess skills to solve complex problems and 
+				effectively self-manage during independent projects, as well as collaborate efficiently as part of a team.
+				</p>
+			
 			<a href="mailto: vaglegra91@gmail.com" class="btn">Contact Me</a>
 		</div>
 	</section>
 
 
-	<!---services--->
-	<section class="services" id="services">
+	<!---experience--->
+	<section class="experience" id="experience">
 		<div class="main-text">
-			<h2>My Services</h2>
-			<h4>Better Design, Better Expericences</h4>
+			<h2>My Experience</h2>
+			<h4>Better Code, Better Experiences</h4>
 		</div>
 
-		<div class="services-content">	
+		<div class="experience-content">	
 			<div class="box">
-				<img src="img/serv2.png">
-				<h3>Website Design</h3>
-				<p>Lorem Ipsum Is Simply Dummy Text Of The Printing Andtypesetting Industry. Lorem Ipsum Has Been The Website Industry's Standard Dummy .</p>
+				<img src="img/serv2.png" alt="Software Development Icon">
+				<h3>Software Developer at Sifizsoft S.A</h3>
+				<h5>May, 2023 - Present</h5>
+				<ul class="experience-list">
+					<li>Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.</li>
+					<li>Developed complex features and performed automated testing, ensuring software quality at 98%.</li>
+					<li>Programmed updates based on detailed design specifications, improving system stability by 15%.</li>
+					<li>Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.</li>
+					<li>Provided support and maintenance for incidents in APIs, web, and mobile applications.</li>
+					<li>Programmed new views and functionalities in mobile applications.</li>
+				</ul>
 			</div>
 		</div>
 	</section>
 
+	<!---skills--->
+	<section class="experience" id="skills">
+		<div class="main-text">
+			<h2>My Skills</h2>
+			<h4>All for one and one for all</h4>
+		</div>
+
+		<div class="experience-content">	
+			<div class="box">
+				<img src="img/serv2.png" alt="Software Development Icon">
+				<h3>Technical Skills</h3>
+				<ul class="experience-list">
+					<li>Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.</li>
+					<li>Developed complex features and performed automated testing, ensuring software quality at 98%.</li>
+					<li>Programmed updates based on detailed design specifications, improving system stability by 15%.</li>
+					<li>Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.</li>
+					<li>Provided support and maintenance for incidents in APIs, web, and mobile applications.</li>
+					<li>Programmed new views and functionalities in mobile applications.</li>
+				</ul>
+				<h3>Soft Skills</h3>
+				<ul class="experience-list">
+					<li>Participated in the </li>
+					<li>Developed complex</li>
+					<li>Programmed updates </li>
+					<li>Worked independently </li>
+					<li>Provided support and m</li>
+					<li>Programmed new views </li>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<!---portfolio--->
 	<section class="portfolio" id="portfolio">
 		<div class="main-text">
@@ -177,25 +208,39 @@
 			</div>
 			<div class="contact-icons">
 				<a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-				<a href="#" target="_blank"><i class='bx bxl-facebook' ></i></a>
-				<a href="#" target="_blank"><i class='bx bxl-instagram' ></i></a>
 				<a href="https://github.com/vgl91" target="_blank"><i class='bx bxl-github' ></i></a>
 			</div>
 		</div>
 
 		<div class="contact-form">
-			<form action="">
-				<input type="" placeholder="Enter Your Name" required>
-				<input type="email" placeholder="Enter Your Email" required>
-				<input type="" placeholder="Enter Your Subject">
-				<textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-				<input type="submit" value="Submit" class="send">
+			<form action="" method="POST">
+				<div class="form-group">
+					<label for="name" class="visually-hidden">Name</label>
+					<input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="email" class="visually-hidden">Email</label>
+					<input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="subject" class="visually-hidden">Subject</label>
+					<input type="text" id="subject" name="subject" placeholder="Enter Your Subject">
+				</div>
+				
+				<div class="form-group">
+					<label for="message" class="visually-hidden">Message</label>
+					<textarea id="message" name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+				</div>
+				
+				<button type="submit" class="btn">Submit</button>
 			</form>
 		</div>
 	</section>
 
 	<div class="last-text">
-		<p>Developed by Victor Guilarte © 2022</p>
+		<p>Developed by Victor Guilarte © <span id="current-year">2022</span></p>
 	</div>
 
 	<!---scroll-top--->

@@ -19,6 +19,7 @@
 	--p-font: 1.1rem;
 	--skills-bar-lenght: 0%;
 	--transition: color 0.1s, background-color 0.2s ease-in-out;
+	--main-color-rgb: 235, 74, 74;
 }
 body{
 	background: var(--bg-color);
@@ -32,7 +33,9 @@ header{
 	z-index: 1000;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
 	background: transparent;
 	padding: 22px 16%;
 	border-bottom: 1px solid transparent;
@@ -44,6 +47,9 @@ header{
 }
 .navbar{
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
 }
 .navbar a{
 	color: var(--second-color);
@@ -215,10 +221,78 @@ header.sticky{
 	--skills-bar-lenght: 90%
 }
 
-.about-img img{
-	height: auto;
-	width: 100%;
-	max-width: 460px;
+.about-img {
+    position: relative;
+    padding: 1rem;
+}
+
+.img-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 25%,
+        rgba(var(--main-color-rgb), 0.1) 50%,
+        transparent 75%
+    );
+    transform: translateY(100%);
+    transition: transform 0.6s ease;
+}
+
+.img-container:hover::before {
+    transform: translateY(0);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+}
+
+.img-container::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--main-color);
+    top: -15px;
+    left: -15px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--main-color);
+    bottom: -15px;
+    right: -15px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .img-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 .main-text{
@@ -483,10 +557,102 @@ form textarea{
 		--h1-font: 3.7rem;
 	  --h2-font: 2.7rem;
 	}
+	header {
+		justify-content: space-between;
+	}
+	
+	.cv-btn {
+		margin-left: auto;
+	}
 }
 
 @keyframes skills-bar-fill {
 	to {
 		transform: translateX(var(--skills-bar-lenght));
 	}
+}
+
+/* Utilidades de accesibilidad */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Mejoras en el formulario */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Mejoras en botones */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Focus states para accesibilidad */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--main-color);
+    outline-offset: 2px;
+}
+
+/* Estilo para el nuevo botón CV */
+.cv-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.8rem 1.5rem;
+	background: var(--main-color);
+	color: var(--text-color);
+	border-radius: var(--border-radius);
+	font-weight: 600;
+	transition: var(--transition);
+}
+
+.cv-btn:hover {
+	background: transparent;
+	outline: 2px solid var(--main-color);
+	transform: translateY(-3px);
+}
+
+.experience-list {
+    text-align: left;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.6;
+}
+
+.experience-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.experience-list li::before {
+    content: "•";
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.box {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
 }

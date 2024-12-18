@@ -1,0 +1,142 @@
+:root {
+  /* Colores */
+  --bg-color: #020312;
+  --text-color: #fff;
+  --main-color: #eb4a4a;
+  --second-color: gray;
+  --other-color: #12141c;
+  
+  /* Tipografía */
+  --h1-font: clamp(3rem, 5.2vw, 5.2rem);
+  --h2-font: clamp(2.5rem, 3.5vw, 3.5rem);
+  --p-font: clamp(1rem, 1.1vw, 1.1rem);
+  
+  /* Layout */
+  --border-radius: 0.5rem;
+  --section-padding: 16%;
+  --container-padding: clamp(1rem, 3%, 2rem);
+  --box-bg: #12141c;
+  
+  /* Animaciones */
+  --transition: 0.4s ease;
+  --skills-bar-lenght: 0%;
+}
+
+/* Estilos base */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Mejoras en el header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 22px, 2rem) var(--section-padding);
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* Mejoras en las animaciones */
+.btn,
+.navbar a,
+.box,
+.row,
+.contact-list li a,
+.contact-icons i {
+  transition: var(--transition);
+}
+
+/* Mejoras en la barra de skills */
+.skills__bar {
+  width: 100%;
+  max-width: 175px;
+  height: 8px;
+  background-color: rgba(136, 136, 136, 0.2);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills__bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: translateX(-101%);
+  will-change: transform;
+  transition: var(--transition);
+}
+
+/* Mejoras en el responsive */
+@media (max-width: 1325px) {
+  :root {
+    --section-padding: 3%;
+  }
+}
+
+@media (max-width: 970px) {
+  .services-content,
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .about,
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Soporte para preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Soporte para modo oscuro/claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f5f5f5;
+    --text-color: #020312;
+    --box-bg: #ffffff;
+    --second-color: #555555;
+  }
+}
+
+/* Optimización de animaciones */
+@keyframes skills-bar-fill {
+  to {
+    transform: translateX(var(--skills-bar-lenght));
+  }
+}
+
+/* Mejoras en imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-img img,
+.row img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+} 
