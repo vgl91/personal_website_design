@@ -20,15 +20,16 @@
   <link rel="preload" href="css/style.css" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" as="style">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body>
 
 	<!---header--->
 	<header>
 		<a href="#" class="logo" aria-label="Home">
-			<img src="img/logo.png" alt="Victor Guilarte Logo" width="135" height="40">
+			<img alt="Victor Guilarte Logo" width="135" height="40">
 		</a>
-		<button class="bx bx-menu" id="menu-icon" aria-label="Toggle menu"></button>
 
 		<ul class="navbar">
 			<li><a href="#home">Home</a></li>
@@ -38,6 +39,14 @@
 			<li><a href="#portfolio">My Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
+
+		<div class="btn header-buttons">
+			<button id="theme-toggle" class="btn theme-toggle" aria-label="Toggle theme">
+				<i class='bx bx-moon'></i>
+			</button>
+		</div>
+
+		<button class="bx bx-menu" id="menu-icon" aria-label="Toggle menu"></button>
 	</header>
 
 	<!---home--->
@@ -45,13 +54,52 @@
 		<div class="home-text">
 			<h4>Hello</h4>
 			<h1>I'm Victor <br> <span>Guilarte</span></h1>
-			<h3>Front-End Developer</h3>
-			<a href="mailto: vaglegra91@gmail.com" class="btn">Get in touch</a>
+			<h3>Software Developer</h3>
+			<a href="#contact" class="btn">Get in touch</a>
 			<a href="path/to/your/cv.pdf" class="btn" download>
 				<i class='bx bx-download'></i>
 				Download CV
-			</a>
+			</a>		
 		</div>
+
+		<div class="tech-stack">
+			<div class="tech-item" title=".NET">
+				<i class="devicon-dotnetcore-plain colored"></i>
+				<span class="tech-name">.NET</span>
+			</div>
+			<div class="tech-item" title="C#">
+				<i class="devicon-csharp-plain colored"></i>
+				<span class="tech-name">C#</span>
+			</div>
+			<div class="tech-item" title="JavaScript">
+				<i class="devicon-javascript-plain colored"></i>
+				<span class="tech-name">JavaScript</span>
+			</div>
+			<div class="tech-item" title="HTML5">
+				<i class="devicon-html5-plain colored"></i>
+				<span class="tech-name">HTML5</span>
+			</div>
+			<div class="tech-item" title="Xamarin">
+				<i class="devicon-xamarin-original colored"></i>
+				<span class="tech-name">Xamarin</span>
+			</div>
+			<div class="tech-item" title="Angular">
+				<i class="devicon-angularjs-plain colored"></i>
+				<span class="tech-name">Angular</span>
+			</div>
+			<div class="tech-item" title="GitHub">
+				<i class="devicon-github-original"></i>
+				<span class="tech-name">GitHub</span>
+			</div>
+			<div class="tech-item" title="Blazor">
+				<i class="devicon-dot-net-plain colored"></i>
+				<span class="tech-name">Blazor</span>
+			</div>
+			<div class="tech-item" title="SQL Server">
+				<i class="devicon-microsoftsqlserver-plain colored"></i>
+				<span class="tech-name">SQL Server</span>
+			</div>
+		</div>			
 	</section>
 
 	<!---about--->
@@ -113,21 +161,22 @@
 				<img src="img/serv2.png" alt="Software Development Icon">
 				<h3>Technical Skills</h3>
 				<ul class="experience-list">
-					<li>Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.</li>
-					<li>Developed complex features and performed automated testing, ensuring software quality at 98%.</li>
-					<li>Programmed updates based on detailed design specifications, improving system stability by 15%.</li>
-					<li>Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.</li>
-					<li>Provided support and maintenance for incidents in APIs, web, and mobile applications.</li>
-					<li>Programmed new views and functionalities in mobile applications.</li>
+					<li>Programming Languages: Javascript, C#</li>
+					<li>Frameworks: ASP.Net Core, Angular, Blazor</li>
+					<li>API Desing and Development	</li>
+					<li>Database: SQL Server, MySQL</li>
+					<li>Cloud Services: Azure, AWS</li>
+					<li>Version Control: Git, GitHub</li>
+					<li>Agile Methodologies: Scrum</li>
 				</ul>
 				<h3>Soft Skills</h3>
 				<ul class="experience-list">
-					<li>Participated in the </li>
-					<li>Developed complex</li>
-					<li>Programmed updates </li>
-					<li>Worked independently </li>
-					<li>Provided support and m</li>
-					<li>Programmed new views </li>
+					<li>Proactivity</li>
+					<li>Teamwork</li>
+					<li>Communication</li>
+					<li>Problem Solving</li>
+					<li>Adaptability</li>
+					<li>Time Management</li>
 				</ul>
 			</div>
 		</div>
