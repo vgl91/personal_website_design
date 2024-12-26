@@ -1,4 +1,15 @@
 const header = document.querySelector("header");
+const flags = document.getElementById("flags");
+const changeLang = async (lang) => {
+	const response = await fetch(`languages/${lang}.json`);
+	const texts = await response.json();
+	console.log(texts);
+}
+
+flags.addEventListener("click", (e) => {
+	const lang = e.target.parentElement.dataset.lang;
+	changeLang(lang);
+});
 
 window.addEventListener ("scroll", function() {
 	header.classList.toggle ("sticky", window.scrollY >0);

@@ -1,0 +1,125 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "portfolio": "Mi Portafolio",
+    "contact": "Contacto"
+  },
+  
+  "home": {
+    "greeting": "Hola",
+    "title": "Soy Victor",
+    "role": "Desarrollador de Software",
+    "cta": {
+      "contact": "Contáctame",
+      "download": "Descargar CV"
+    }
+  },
+  
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Hola, Estoy Aquí Para Ayudar En Tu Próximo Proyecto",
+    "description": "Soy un desarrollador Full-Stack con .Net, con 2 años de experiencia profesional desde 2023. He participado en el diseño, desarrollo y migración de sistemas empresariales, especializándome en aplicaciones financieras web, aplicando metodologías ágiles (Scrum) para asegurar la entrega rápida y eficiente de soluciones de software. Poseo habilidades para resolver problemas complejos y autogestionar eficazmente durante proyectos independientes, así como colaborar eficientemente como parte de un equipo.",
+    "cta": "Contáctame"
+  },
+  
+  "experience": {
+    "title": "Mi Experiencia",
+    "subtitle": "Mejor Código, Mejores Experiencias",
+    "current_role": {
+      "title": "Desarrollador de Software en Sifizsoft S.A",
+      "period": "Mayo, 2023 - Presente",
+      "responsibilities": [
+        "Participé en la migración del Sistema Financiero Empresarial a una aplicación web, aumentando la eficiencia del sistema en un 25%.",
+        "Desarrollé características complejas y realicé pruebas automatizadas, asegurando una calidad del software del 98%.",
+        "Programé actualizaciones basadas en especificaciones detalladas de diseño, mejorando la estabilidad del sistema en un 15%.",
+        "Trabajé de forma independiente y como miembro entusiasta del equipo, colaborando bajo un enfoque DevOps para asegurar la entrega continua y escalabilidad de las aplicaciones.",
+        "Proporcioné soporte y mantenimiento para incidencias en APIs, aplicaciones web y móviles.",
+        "Programé nuevas vistas y funcionalidades en aplicaciones móviles."
+      ]
+    }
+  },
+  
+  "skills": {
+    "title": "Mis Habilidades",
+    "subtitle": "Todos para uno y uno para todos",
+    "technical": {
+      "title": "Habilidades Técnicas",
+      "items": [
+        "Lenguajes de Programación: Javascript, C#",
+        "Frameworks: ASP.Net Core, Angular, Blazor",
+        "Diseño y Desarrollo de APIs",
+        "Base de Datos: SQL Server, MySQL",
+        "Servicios en la Nube: Azure, AWS",
+        "Control de Versiones: Git, GitHub",
+        "Metodologías Ágiles: Scrum"
+      ]
+    },
+    "soft": {
+      "title": "Habilidades Blandas",
+      "items": [
+        "Proactividad",
+        "Trabajo en Equipo",
+        "Comunicación",
+        "Resolución de Problemas",
+        "Adaptabilidad",
+        "Gestión del Tiempo"
+      ]
+    }
+  },
+  
+  "portfolio": {
+    "title": "Mi Portafolio",
+    "subtitle": "Algunos De Mis Trabajos Destacados",
+    "projects": [
+      {
+        "category": "Desarrollo",
+        "title": "Diseño y Servicios de aplicación móvil",
+        "image": "portfolio1.jpg"
+      },
+      {
+        "category": "Desarrollo",
+        "title": "Diseño y Servicios de aplicación móvil",
+        "image": "portfolio2.jpg"
+      },
+      {
+        "category": "Desarrollo",
+        "title": "Diseño y Servicios de aplicación móvil",
+        "image": "portfolio3.jpg"
+      },
+      {
+        "category": "Desarrollo",
+        "title": "Diseño y Servicios de aplicación móvil",
+        "image": "portfolio4.jpg"
+      }
+    ]
+  },
+  
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Trabajemos Juntos",
+    "description": "Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica",
+    "location": "Holguín - Cuba",
+    "email": "vaglegra91@gmail.com",
+    "phone": "+53-54791418",
+    "form": {
+      "name": "Ingrese Su Nombre",
+      "email": "Ingrese Su Correo",
+      "subject": "Ingrese El Asunto",
+      "message": "Ingrese Su Mensaje",
+      "submit": "Enviar"
+    }
+  },
+  
+  "footer": {
+    "copyright": "Desarrollado por Victor Guilarte ©"
+  },
+  
+  "accessibility": {
+    "theme_toggle": "Cambiar tema",
+    "menu_toggle": "Alternar menú",
+    "back_to_top": "Volver arriba"
+  }
+}

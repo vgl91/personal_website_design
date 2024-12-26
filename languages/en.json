@@ -1,0 +1,125 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "portfolio": "My Portfolio",
+    "contact": "Contact"
+  },
+  
+  "home": {
+    "greeting": "Hello",
+    "title": "I'm Victor",
+    "role": "Software Developer",
+    "cta": {
+      "contact": "Get in touch",
+      "download": "Download CV"
+    }
+  },
+  
+  "about": {
+    "title": "About Me",
+    "subtitle": "Hi, I'm Here To Help Your Next Project",
+    "description": "I am a Full-Stack developer with .Net, having 2 years of professional experience since 2023. I have participated in the design, development, and migration of enterprise systems, specializing in web financial applications, applying agile methodologies (Scrum) to ensure the rapid and efficient delivery of software solutions. I possess skills to solve complex problems and effectively self-manage during independent projects, as well as collaborate efficiently as part of a team.",
+    "cta": "Contact Me"
+  },
+  
+  "experience": {
+    "title": "My Experience",
+    "subtitle": "Better Code, Better Experiences",
+    "current_role": {
+      "title": "Software Developer at Sifizsoft S.A",
+      "period": "May, 2023 - Present",
+      "responsibilities": [
+        "Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.",
+        "Developed complex features and performed automated testing, ensuring software quality at 98%.",
+        "Programmed updates based on detailed design specifications, improving system stability by 15%.",
+        "Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.",
+        "Provided support and maintenance for incidents in APIs, web, and mobile applications.",
+        "Programmed new views and functionalities in mobile applications."
+      ]
+    }
+  },
+  
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "All for one and one for all",
+    "technical": {
+      "title": "Technical Skills",
+      "items": [
+        "Programming Languages: Javascript, C#",
+        "Frameworks: ASP.Net Core, Angular, Blazor",
+        "API Design and Development",
+        "Database: SQL Server, MySQL",
+        "Cloud Services: Azure, AWS",
+        "Version Control: Git, GitHub",
+        "Agile Methodologies: Scrum"
+      ]
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "items": [
+        "Proactivity",
+        "Teamwork",
+        "Communication",
+        "Problem Solving",
+        "Adaptability",
+        "Time Management"
+      ]
+    }
+  },
+  
+  "portfolio": {
+    "title": "My Portfolio",
+    "subtitle": "Some Of My Distinguished Works",
+    "projects": [
+      {
+        "category": "Development",
+        "title": "Mobile app landing design & Services",
+        "image": "portfolio1.jpg"
+      },
+      {
+        "category": "Development",
+        "title": "Mobile app landing design & Services",
+        "image": "portfolio2.jpg"
+      },
+      {
+        "category": "Development",
+        "title": "Mobile app landing design & Services",
+        "image": "portfolio3.jpg"
+      },
+      {
+        "category": "Development",
+        "title": "Mobile app landing design & Services",
+        "image": "portfolio4.jpg"
+      }
+    ]
+  },
+  
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's Work Together",
+    "description": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry",
+    "location": "Holguín - Cuba",
+    "email": "vaglegra91@gmail.com",
+    "phone": "+53-54791418",
+    "form": {
+      "name": "Enter Your Name",
+      "email": "Enter Your Email",
+      "subject": "Enter Your Subject",
+      "message": "Enter Your Message",
+      "submit": "Submit"
+    }
+  },
+  
+  "footer": {
+    "copyright": "Developed by Victor Guilarte ©"
+  },
+  
+  "accessibility": {
+    "theme_toggle": "Toggle theme",
+    "menu_toggle": "Toggle menu",
+    "back_to_top": "Back to top"
+  }
+}
