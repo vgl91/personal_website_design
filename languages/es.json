@@ -1,125 +1,80 @@
 {
-  "header": {
-    "home": "Inicio",
-    "about": "Sobre Mí",
-    "experience": "Experiencia",
-    "skills": "Habilidades",
-    "portfolio": "Mi Portafolio",
-    "contact": "Contacto"
-  },
+  "nav_home": "Inicio",
+  "nav_about": "Sobre Mí",
+  "nav_experience": "Experiencia",
+  "nav_skills": "Habilidades",
+  "nav_portfolio": "Portafolio",
+  "nav_certifications": "Certificaciones",
+  "nav_contact": "Contacto",
   
-  "home": {
-    "greeting": "Hola",
-    "title": "Soy Victor",
-    "role": "Desarrollador de Software",
-    "cta": {
-      "contact": "Contáctame",
-      "download": "Descargar CV"
-    }
-  },
+  "home_greeting": "Hola",
+  "home_title": "Soy Victor",
+  "home_subtitle": "Guilarte",
+  "home_role": "Desarrollador de Software",
+  "home_cta_contact": "Contáctame",
+  "home_cta_download": "Descargar CV",
   
-  "about": {
-    "title": "Sobre Mí",
-    "subtitle": "Hola, Estoy Aquí Para Ayudar En Tu Próximo Proyecto",
-    "description": "Soy un desarrollador Full-Stack con .Net, con 2 años de experiencia profesional desde 2023. He participado en el diseño, desarrollo y migración de sistemas empresariales, especializándome en aplicaciones financieras web, aplicando metodologías ágiles (Scrum) para asegurar la entrega rápida y eficiente de soluciones de software. Poseo habilidades para resolver problemas complejos y autogestionar eficazmente durante proyectos independientes, así como colaborar eficientemente como parte de un equipo.",
-    "cta": "Contáctame"
-  },
+  "about_title": "Sobre Mí",
+  "about_subtitle": "Hola, Estoy Aquí Para Ayudar en Tu Próximo Proyecto",
+  "about_description": "Soy un desarrollador Full-Stack con .Net, con 2 años de experiencia profesional desde 2023. He participado en el diseño, desarrollo y migración de sistemas empresariales, especializándome en aplicaciones financieras web, aplicando metodologías ágiles (Scrum) para asegurar la entrega rápida y eficiente de soluciones de software. Poseo habilidades para resolver problemas complejos y autogestionar eficazmente proyectos independientes, así como colaborar eficientemente como parte de un equipo.",
+  "about_cta": "Contáctame",
   
-  "experience": {
-    "title": "Mi Experiencia",
-    "subtitle": "Mejor Código, Mejores Experiencias",
-    "current_role": {
-      "title": "Desarrollador de Software en Sifizsoft S.A",
-      "period": "Mayo, 2023 - Presente",
-      "responsibilities": [
-        "Participé en la migración del Sistema Financiero Empresarial a una aplicación web, aumentando la eficiencia del sistema en un 25%.",
-        "Desarrollé características complejas y realicé pruebas automatizadas, asegurando una calidad del software del 98%.",
-        "Programé actualizaciones basadas en especificaciones detalladas de diseño, mejorando la estabilidad del sistema en un 15%.",
-        "Trabajé de forma independiente y como miembro entusiasta del equipo, colaborando bajo un enfoque DevOps para asegurar la entrega continua y escalabilidad de las aplicaciones.",
-        "Proporcioné soporte y mantenimiento para incidencias en APIs, aplicaciones web y móviles.",
-        "Programé nuevas vistas y funcionalidades en aplicaciones móviles."
-      ]
-    }
-  },
+  "experience_title": "Mi Experiencia",
+  "experience_subtitle": "Mejor Código, Mejores Experiencias",
+  "experience_role": "Desarrollador de Software en Sifizsoft S.A",
+  "experience_period": "Mayo, 2023 - Presente",
+  "experience_resp_1": "Participé en la migración del Sistema Financiero Empresarial a una aplicación web, aumentando la eficiencia del sistema en un 25%.",
+  "experience_resp_2": "Desarrollé características complejas y realicé pruebas automatizadas, asegurando una calidad del software del 98%.",
+  "experience_resp_3": "Programé actualizaciones basadas en especificaciones detalladas de diseño, mejorando la estabilidad del sistema en un 15%.",
+  "experience_resp_4": "Trabajé de forma independiente y como miembro entusiasta del equipo, colaborando bajo un enfoque DevOps para asegurar la entrega continua y escalabilidad de las aplicaciones.",
+  "experience_resp_5": "Proporcioné soporte y mantenimiento para incidencias en APIs, aplicaciones web y móviles.",
+  "experience_resp_6": "Programé nuevas vistas y funcionalidades en aplicaciones móviles.",
   
-  "skills": {
-    "title": "Mis Habilidades",
-    "subtitle": "Todos para uno y uno para todos",
-    "technical": {
-      "title": "Habilidades Técnicas",
-      "items": [
-        "Lenguajes de Programación: Javascript, C#",
-        "Frameworks: ASP.Net Core, Angular, Blazor",
-        "Diseño y Desarrollo de APIs",
-        "Base de Datos: SQL Server, MySQL",
-        "Servicios en la Nube: Azure, AWS",
-        "Control de Versiones: Git, GitHub",
-        "Metodologías Ágiles: Scrum"
-      ]
-    },
-    "soft": {
-      "title": "Habilidades Blandas",
-      "items": [
-        "Proactividad",
-        "Trabajo en Equipo",
-        "Comunicación",
-        "Resolución de Problemas",
-        "Adaptabilidad",
-        "Gestión del Tiempo"
-      ]
-    }
-  },
+  "skills_title": "Mis Habilidades",
+  "skills_subtitle": "Todos para uno y uno para todos",
+  "skills_technical_title": "Habilidades Técnicas",
+  "skills_technical_1": "Lenguajes de Programación: Javascript, C#",
+  "skills_technical_2": "Frameworks: ASP.Net Core, Angular, Blazor",
+  "skills_technical_3": "Diseño y Desarrollo de APIs",
+  "skills_technical_4": "Base de Datos: SQL Server, MySQL",
+  "skills_technical_5": "Servicios en la Nube: Azure, AWS",
+  "skills_technical_6": "Control de Versiones: Git, GitHub",
+  "skills_technical_7": "Metodologías Ágiles: Scrum",
   
-  "portfolio": {
-    "title": "Mi Portafolio",
-    "subtitle": "Algunos De Mis Trabajos Destacados",
-    "projects": [
-      {
-        "category": "Desarrollo",
-        "title": "Diseño y Servicios de aplicación móvil",
-        "image": "portfolio1.jpg"
-      },
-      {
-        "category": "Desarrollo",
-        "title": "Diseño y Servicios de aplicación móvil",
-        "image": "portfolio2.jpg"
-      },
-      {
-        "category": "Desarrollo",
-        "title": "Diseño y Servicios de aplicación móvil",
-        "image": "portfolio3.jpg"
-      },
-      {
-        "category": "Desarrollo",
-        "title": "Diseño y Servicios de aplicación móvil",
-        "image": "portfolio4.jpg"
-      }
-    ]
-  },
+  "skills_soft_title": "Habilidades Blandas",
+  "skills_soft_1": "Proactividad",
+  "skills_soft_2": "Trabajo en Equipo",
+  "skills_soft_3": "Comunicación",
+  "skills_soft_4": "Resolución de Problemas",
+  "skills_soft_5": "Adaptabilidad",
+  "skills_soft_6": "Gestión del Tiempo",
   
-  "contact": {
-    "title": "Contáctame",
-    "subtitle": "Trabajemos Juntos",
-    "description": "Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica",
-    "location": "Holguín - Cuba",
-    "email": "vaglegra91@gmail.com",
-    "phone": "+53-54791418",
-    "form": {
-      "name": "Ingrese Su Nombre",
-      "email": "Ingrese Su Correo",
-      "subject": "Ingrese El Asunto",
-      "message": "Ingrese Su Mensaje",
-      "submit": "Enviar"
-    }
-  },
+  "portfolio_title": "Mi Portafolio",
+  "portfolio_subtitle": "Algunos de Mis Trabajos Destacados",
+  "portfolio_project_1_category": "Desarrollo",
+  "portfolio_project_1_title": "Diseño y servicios de aplicación móvil",
+  "portfolio_project_2_category": "Desarrollo",
+  "portfolio_project_2_title": "Diseño y servicios de aplicación móvil",
+  "portfolio_project_3_category": "Desarrollo",
+  "portfolio_project_3_title": "Diseño y servicios de aplicación móvil",
+  "portfolio_project_4_category": "Desarrollo",
+  "portfolio_project_4_title": "Diseño y servicios de aplicación móvil",
   
-  "footer": {
-    "copyright": "Desarrollado por Victor Guilarte ©"
-  },
+  "certifications_title": "Mis Certificaciones",
+  "certifications_subtitle": "Disfrutando el viaje",
   
-  "accessibility": {
-    "theme_toggle": "Cambiar tema",
-    "menu_toggle": "Alternar menú",
-    "back_to_top": "Volver arriba"
-  }
+  "contact_title": "Contáctame",
+  "contact_subtitle": "Trabajemos Juntos",
+  "contact_description": "Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica",
+  "contact_form_name": "Nombre",
+  "contact_form_name_placeholder": "Ingrese su nombre",
+  "contact_form_email": "Correo",
+  "contact_form_email_placeholder": "Ingrese su correo",
+  "contact_form_subject": "Asunto",
+  "contact_form_subject_placeholder": "Ingrese el asunto",
+  "contact_form_message": "Mensaje",
+  "contact_form_message_placeholder": "Ingrese su mensaje",
+  "contact_form_submit": "Enviar",
+  
+  "footer_copyright": "Desarrollado por Victor Guilarte ©"
 }

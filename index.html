@@ -32,13 +32,13 @@
 		</a>
 
 		<ul class="navbar">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#certifications">Certifications</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#home" data-text="nav_home">Home</a></li>
+			<li><a href="#about" data-text="nav_about">About</a></li>
+			<li><a href="#experience" data-text="nav_experience">Experience</a></li>
+			<li><a href="#skills" data-text="nav_skills">Skills</a></li>
+			<li><a href="#portfolio" data-text="nav_portfolio">Portfolio</a></li>
+			<li><a href="#certifications" data-text="nav_certifications">Certifications</a></li>
+			<li><a href="#contact" data-text="nav_contact">Contact</a></li>
 		</ul>
 
 		<div id="flags" class="flags">
@@ -61,11 +61,11 @@
 	<!---home--->
 	<section class="home" id="home">
 		<div class="home-text">
-			<h4>Hello</h4>
-			<h1>I'm Victor <br> <span>Guilarte</span></h1>
-			<h3>Software Developer</h3>
-			<a href="#contact" class="btn">Get in touch</a>
-			<a href="path/to/your/cv.pdf" class="btn" download>
+			<h4 data-text="home_greeting">Hello</h4>
+			<h1 data-text="home_title">I'm Victor<br><span data-text="home_subtitle">Guilarte</span></h1>
+			<h3 data-text="home_role">Software Developer</h3>
+			<a href="#contact" class="btn" data-text="home_cta_contact">Get in touch</a>
+			<a href="https://drive.google.com/drive/folders/1DG1HCHeixXGl8LHw0-L0pq3qbfsehbky?usp=sharing" target="_blank" class="btn" download data-text="home_cta_download">
 				<i class='bx bx-download'></i>
 				Download CV
 			</a>		
@@ -121,15 +121,15 @@
 		</div>
 
 		<div class="about-text">
-			<h2>About Me</h2>
-			<h4>Hi, I'm Here To Help Your Next Project</h4>
-			<p>I am a Full-Stack developer with .Net, having 2 years of professional experience since 2023. I have participated in 
+			<h2 data-text="about_title">About Me</h2>
+			<h4 data-text="about_subtitle">Hi, I'm Here To Help Your Next Project</h4>
+			<p data-text="about_description">I am a Full-Stack developer with .Net, having 2 years of professional experience since 2023. I have participated in 
 				the design, development, and migration of enterprise systems, specializing in web financial applications, applying 
 				agile methodologies (Scrum) to ensure the rapid and efficient delivery of software solutions.  I possess skills to solve complex problems and 
 				effectively self-manage during independent projects, as well as collaborate efficiently as part of a team.
 				</p>
 			
-			<a href="mailto: vaglegra91@gmail.com" class="btn">Contact Me</a>
+			<a href="mailto: vaglegra91@gmail.com" class="btn" data-text="about_cta">Contact Me</a>
 		</div>
 	</section>
 
@@ -137,55 +137,55 @@
 	<!---experience--->
 	<section class="experience" id="experience">
 		<div class="main-text">
-			<h2>My Experience</h2>
-			<h4>Better Code, Better Experiences</h4>
+			<h2 data-text="experience_title">My Experience</h2>
+			<h4 data-text="experience_subtitle">Better Code, Better Experiences</h4>
 		</div>
 
 		<div class="experience-content">	
 			<div class="box">
 				<img src="img/serv2.png" alt="Software Development Icon">
-				<h3>Software Developer at Sifizsoft S.A</h3>
-				<h5>May, 2023 - Present</h5>
+				<h3 data-text="experience_role">Software Developer at Sifizsoft S.A</h3>
+				<h5 data-text="experience_period">May, 2023 - Present</h5>
 				<ul class="experience-list">
-					<li>Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.</li>
-					<li>Developed complex features and performed automated testing, ensuring software quality at 98%.</li>
-					<li>Programmed updates based on detailed design specifications, improving system stability by 15%.</li>
-					<li>Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.</li>
-					<li>Provided support and maintenance for incidents in APIs, web, and mobile applications.</li>
-					<li>Programmed new views and functionalities in mobile applications.</li>
+					<li data-text="experience_resp_1">Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.</li>
+					<li data-text="experience_resp_2">Developed complex features and performed automated testing, ensuring software quality at 98%.</li>
+					<li data-text="experience_resp_3">Programmed updates based on detailed design specifications, improving system stability by 15%.</li>
+					<li data-text="experience_resp_4">Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.</li>
+					<li data-text="experience_resp_5">Provided support and maintenance for incidents in APIs, web, and mobile applications.</li>
+					<li data-text="experience_resp_6">Programmed new views and functionalities in mobile applications.</li>
 				</ul>
 			</div>
 		</div>
 	</section>
 
 	<!---skills--->
-	<section class="experience" id="skills">
+	<section class="skills" id="skills">
 		<div class="main-text">
-			<h2>My Skills</h2>
-			<h4>All for one and one for all</h4>
+			<h2 data-text="skills_title">My Skills</h2>
+			<h4 data-text="skills_subtitle">All for one and one for all</h4>
 		</div>
 
 		<div class="experience-content">	
 			<div class="box">
 				<img src="img/serv2.png" alt="Software Development Icon">
-				<h3>Technical Skills</h3>
+				<h3 data-text="skills_technical_title">Technical Skills</h3>
 				<ul class="experience-list">
-					<li>Programming Languages: Javascript, C#</li>
-					<li>Frameworks: ASP.Net Core, Angular, Blazor</li>
-					<li>API Desing and Development	</li>
-					<li>Database: SQL Server, MySQL</li>
-					<li>Cloud Services: Azure, AWS</li>
-					<li>Version Control: Git, GitHub</li>
-					<li>Agile Methodologies: Scrum</li>
+					<li data-text="skills_technical_1">Programming Languages: Javascript, C#</li>
+					<li data-text="skills_technical_2">Frameworks: ASP.Net Core, Angular, Blazor</li>
+					<li data-text="skills_technical_3">API Desing and Development	</li>
+					<li data-text="skills_technical_4">Database: SQL Server, MySQL</li>
+					<li data-text="skills_technical_5">Cloud Services: Azure, AWS</li>
+					<li data-text="skills_technical_6">Version Control: Git, GitHub</li>
+					<li data-text="skills_technical_7">Agile Methodologies: Scrum</li>
 				</ul>
-				<h3>Soft Skills</h3>
+				<h3 data-text="skills_soft_title">Soft Skills</h3>
 				<ul class="experience-list">
-					<li>Proactivity</li>
-					<li>Teamwork</li>
-					<li>Communication</li>
-					<li>Problem Solving</li>
-					<li>Adaptability</li>
-					<li>Time Management</li>
+					<li data-text="skills_soft_1">Proactivity</li>
+					<li data-text="skills_soft_2">Teamwork</li>
+					<li data-text="skills_soft_3">Communication</li>
+					<li data-text="skills_soft_4">Problem Solving</li>
+					<li data-text="skills_soft_5">Adaptability</li>
+					<li data-text="skills_soft_6">Time Management</li>
 				</ul>
 			</div>
 		</div>
@@ -193,8 +193,8 @@
 	<!---portfolio--->
 	<section class="portfolio" id="portfolio">
 		<div class="main-text">
-			<h2>My Portfolio</h2>
-			<h4>Some Of My Distinguished Works</h4>
+			<h2 data-text="portfolio_title">My Portfolio</h2>
+			<h4 data-text="portfolio_subtitle">Some Of My Distinguished Works</h4>
 		</div>
 
 		<div class="portfolio-content">
@@ -202,68 +202,68 @@
 				<img src="img/portfolio1.jpg">
 				<div class="main-row">
 					<div class="row-text">
-						<h6>Development</h6>
+						<h6 data-text="portfolio_project_1_category">Development</h6>
 					</div>
 					<div class="row-icon">
 						<i class='bx bx-heart'></i>
 					</div>
 				</div>
-				<h3>Mobile app landing design & Services</h3>
+				<h3 data-text="portfolio_project_1_title">Mobile app landing design & Services</h3>
 			</div>
 
 			<div class="row">
 				<img src="img/portfolio2.jpg">
 				<div class="main-row">
 					<div class="row-text">
-						<h6>Development</h6>
+						<h6 data-text="portfolio_project_2_category">Development</h6>
 					</div>
 					<div class="row-icon">
 						<i class='bx bx-heart'></i>
 					</div>
 				</div>
-				<h3>Mobile app landing design & Services</h3>
+				<h3 data-text="portfolio_project_2_title">Mobile app landing design & Services</h3>
 			</div>
 
 			<div class="row">
 				<img src="img/portfolio3.jpg">
 				<div class="main-row">
 					<div class="row-text">
-						<h6>Development</h6>
+						<h6 data-text="portfolio_project_3_category">Development</h6>
 					</div>
 					<div class="row-icon">
 						<i class='bx bx-heart'></i>
 					</div>
 				</div>
-				<h3>Mobile app landing design & Services</h3>
+				<h3 data-text="portfolio_project_3_title">Mobile app landing design & Services</h3>
 			</div>
 
 			<div class="row">
 				<img src="img/portfolio4.jpg">
 				<div class="main-row">
 					<div class="row-text">
-						<h6>Development</h6>
+						<h6 data-text="portfolio_project_4_category">Development</h6>
 					</div>
 					<div class="row-icon">
 						<i class='bx bx-heart'></i>
 					</div>
 				</div>
-				<h3>Mobile app landing design & Services</h3>
+				<h3 data-text="portfolio_project_4_title">Mobile app landing design & Services</h3>
 			</div>
 
 		</div>
 	</section>
 
 	<!---certifications--->
-	<section class="portfolio" id="certifications">
+	<section class="certifications" id="certifications">
 		<div class="main-text">
-			<h2>My Certifications</h2>
-			<h4>Enjoying the trip</h4>
+			<h2 data-text="certifications_title">My Certifications</h2>
+			<h4 data-text="certifications_subtitle">Enjoying the trip</h4>
 		</div>
 
 		<div class="experience-content">	
 			<div class="box">
 				<img src="img/serv1.png" alt="Software Development Icon">
-				<h3>Certifications</h3>
+				<h3 data-text="certifications_title">Certifications</h3>
 				<ul class="experience-list">
 					<li><a href="https://freecodecamp.org/certification/fcc732d1744-b5b4-439f-9c80-f657af7e39a6/foundational-c-sharp-with-microsoft" target="_blank">Foundational C# with Microsoft</a></li>
 					<li><a href="https://platzi.com/p/victorguilarte91/curso/3208-programacion-basica/diploma/detalle/" target="_blank">Curso Gratis de Programación Básica</a></li>
@@ -279,9 +279,9 @@
 	<!---contact--->
 	<section class="contact" id="contact">
 		<div class="contact-text">
-			<h2>Contact Me</h2>
-			<h4>Let's Work Together</h4>
-			<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry</p>
+			<h2 data-text="contact_title">Contact Me</h2>
+			<h4 data-text="contact_subtitle">Let's Work Together</h4>
+			<p data-text="contact_description">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry</p>
 			<div class="contact-list">
 				<li><a href="https://www.google.com/maps/place/Holgu%C3%ADn/@20.8966059,-76.2624979,13z/data=!3m1!4b1!4m5!3m4!1s0x8ecded6850f45db9:0x30fd21580649f887!8m2!3d20.8795129!4d-76.2594981" target="_blank">Holguín - Cuba</a></li>
 				<li><a href="mailto: vaglegra91@gmail.com">vaglegra91@gmail.com</a></li>
@@ -296,32 +296,32 @@
 		<div class="contact-form">
 			<form action="" method="POST">
 				<div class="form-group">
-					<label for="name" class="visually-hidden">Name</label>
-					<input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+					<label for="name" class="visually-hidden" data-text="contact_form_name">Name</label>
+					<input type="text" id="name" name="name" data-text="contact_form_name_placeholder" placeholder="Enter Your Name" required>
 				</div>
 				
 				<div class="form-group">
-					<label for="email" class="visually-hidden">Email</label>
-					<input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+					<label for="email" class="visually-hidden" data-text="contact_form_email">Email</label>
+					<input type="email" id="email" name="email" data-text="contact_form_email_placeholder" placeholder="Enter Your Email" required>
 				</div>
 				
 				<div class="form-group">
-					<label for="subject" class="visually-hidden">Subject</label>
-					<input type="text" id="subject" name="subject" placeholder="Enter Your Subject">
+					<label for="subject" class="visually-hidden" data-text="contact_form_subject">Subject</label>
+					<input type="text" id="subject" name="subject" data-text="contact_form_subject_placeholder" placeholder="Enter Your Subject">
 				</div>
 				
 				<div class="form-group">
-					<label for="message" class="visually-hidden">Message</label>
-					<textarea id="message" name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+					<label for="message" class="visually-hidden" data-text="contact_form_message">Message</label>
+					<textarea id="message" name="message" cols="40" rows="10" data-text="contact_form_message_placeholder" placeholder="Enter Your Message" required></textarea>
 				</div>
 				
-				<button type="submit" class="btn">Submit</button>
+				<button type="submit" class="btn" data-text="contact_form_submit">Submit</button>
 			</form>
 		</div>
 	</section>
 
 	<div class="last-text">
-		<p>Developed by Victor Guilarte © <span id="current-year">2022</span></p>
+		<p data-text="footer_copyright">Developed by Victor Guilarte © <span id="current-year">2022</span></p>
 	</div>
 
 	<!---scroll-top--->

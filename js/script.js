@@ -1,14 +1,48 @@
 const header = document.querySelector("header");
-const flags = document.getElementById("flags");
-const changeLang = async (lang) => {
-	const response = await fetch(`languages/${lang}.json`);
-	const texts = await response.json();
-	console.log(texts);
-}
 
+const flags = document.getElementById("flags");
+
+const textsToChange = document.querySelectorAll("[data-text]");
+
+const changeLang = async (lang) => {
+    try {
+        const response = await fetch(`languages/${lang}.json`);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        
+        const texts = await response.json();
+        console.log('Loaded texts:', texts);
+
+        // Actualizar textos normales
+        textsToChange.forEach(element => {
+            const key = element.dataset.text;
+            if (texts[key]) {
+                element.textContent = texts[key];
+            }
+        });
+
+        // Actualizar placeholders
+        document.querySelectorAll('input[data-text], textarea[data-text]').forEach(element => {
+            const key = element.dataset.text;
+            if (texts[key]) {
+                element.placeholder = texts[key];
+            }
+        });
+
+    } catch (error) {
+        console.error('Error loading language file:', error);
+        alert('Error loading language settings. Please try again.');
+    }
+};
+
+// Corregir el evento click para los botones de idioma
 flags.addEventListener("click", (e) => {
-	const lang = e.target.parentElement.dataset.lang;
-	changeLang(lang);
+    // Verificar si el click fue en una imagen o en el contenedor del idioma
+    const flagItem = e.target.closest('.flags-item');
+    if (flagItem) {
+        const lang = flagItem.dataset.lang;
+        console.log('Changing language to:', lang);
+        changeLang(lang);
+    }
 });
 
 window.addEventListener ("scroll", function() {
