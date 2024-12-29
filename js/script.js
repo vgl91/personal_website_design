@@ -104,5 +104,57 @@ function handleThemeToggle() {
     themeToggleBtn.addEventListener('click', toggleTheme);
 }
 
+// Inicializar EmailJS
+window.onload = function() {
+    if (window.emailjs) {
+        console.log("EmailJS loaded successfully");
+        emailjs.init("2YPcm-rA0h-8vmvxg");
+    } else {
+        console.error("EmailJS not loaded");
+    }
+}
+
+// Función para manejar el envío del formulario
+function handleContactFormSubmit() {
+    const form = document.getElementById('contactForm');
+    const submitButton = form.querySelector('button[type="submit"]');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Deshabilitar el botón mientras se envía
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+        
+        // Preparar los parámetros del correo
+        const templateParams = {
+            to_name: "Victor Guilarte",
+            from_name: form.name.value,
+            user_email: form.email.value,
+            subject: form.subject.value,
+            message: form.message.value
+        };
+
+        // Enviar el correo
+        emailjs.send("contact_service", "contact_form", templateParams)
+            .then(function(response) {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Message sent successfully!");
+                form.reset();
+            })
+            .catch(function(error) {
+                console.log("FAILED...", error);
+                alert("Failed to send message. Please try again.");
+            })
+            .finally(function() {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit';
+            });
+    });
+}
+
 // Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', handleThemeToggle);
+document.addEventListener('DOMContentLoaded', function() {
+    handleContactFormSubmit();
+    handleThemeToggle();
+});
