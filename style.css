@@ -48,6 +48,21 @@ header {
   backdrop-filter: blur(10px);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Mejoras en las animaciones */
 .btn,
 .navbar a,
