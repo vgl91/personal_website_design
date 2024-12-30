@@ -59,8 +59,11 @@ header{
 	transition: all .40s ease;
 }
 .logo img{
-	width: 135px;
+	display: block;
+	width: 40px;
 	height: auto;
+	border-radius: var(--border-radius);
+	object-fit: contain;
 }
 .navbar{
 	display: flex;
@@ -104,7 +107,6 @@ section{
 .home-text {
 	width: 100%;
 	max-width: 600px;
-	justify-self: start;
 	margin: 0;
 }
 .home-text h1{
@@ -545,6 +547,7 @@ form textarea{
 		flex-direction: column;
 		background: #12141c;
 		text-align: left;
+		justify-content: end;
 		transition: all .40s ease;
 	}
 	.navbar a{
@@ -940,7 +943,7 @@ textarea:focus {
 }
 
 .home-text {
-	width: 50%;	
+	width: 100%;	
     max-width: 600px;
     justify-self: end;
 	margin: 0 5rem;
@@ -953,7 +956,7 @@ textarea:focus {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 60%;
 }
 
 .tech-item {
@@ -1150,4 +1153,12 @@ textarea:focus {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
