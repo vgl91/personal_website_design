@@ -233,7 +233,7 @@
 		}));
 
 		modal.addEventListener('click', (e) => {
-			if (e.target.matches('[data-close-cv]')) close();
+			if (e.target.closest('[data-close-cv]')) close();
 		});
 
 		document.addEventListener('keydown', (e) => {
