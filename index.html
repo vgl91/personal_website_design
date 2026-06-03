@@ -1,335 +1,615 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Victor Guilarte Portfolio</title>
-	<!---custom css link--->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="color-scheme" content="dark light">
+	<meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
 
-	<link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<title>Victor Guilarte — .NET Full-Stack Developer</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="description" content="Victor Guilarte is a Full-Stack .NET Developer based in Cuba, building enterprise financial systems, web apps and cross-platform mobile software.">
+	<meta name="keywords" content="Victor Guilarte, .NET developer, full-stack, C#, ASP.NET Core, Angular, Blazor, Xamarin, SQL Server, portfolio, Cuba, Holguín">
+	<meta name="author" content="Victor Guilarte">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://victorguilarte.dev/">
 
-  <meta name="description" content="Victor Guilarte - Front-End Developer Portfolio">
-  <meta name="keywords" content="frontend, developer, portfolio, web development">
+	<link rel="alternate" hreflang="en" href="https://victorguilarte.dev/">
+	<link rel="alternate" hreflang="es" href="https://victorguilarte.dev/?lang=es">
+	<link rel="alternate" hreflang="x-default" href="https://victorguilarte.dev/">
 
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" as="style">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Victor Guilarte">
+	<meta property="og:title" content="Victor Guilarte — .NET Full-Stack Developer">
+	<meta property="og:description" content="Full-Stack .NET Developer crafting financial and enterprise applications — from design to deployment.">
+	<meta property="og:url" content="https://victorguilarte.dev/">
+	<meta property="og:image" content="https://victorguilarte.dev/img/perfil.webp">
+	<meta property="og:image:width" content="800">
+	<meta property="og:image:height" content="800">
+	<meta property="og:image:alt" content="Victor Guilarte — .NET Full-Stack Developer">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="es_ES">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Victor Guilarte — .NET Full-Stack Developer">
+	<meta name="twitter:description" content="Full-Stack .NET Developer crafting financial and enterprise applications.">
+	<meta name="twitter:image" content="https://victorguilarte.dev/img/perfil.webp">
+	<meta name="twitter:image:alt" content="Victor Guilarte">
 
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+	<link rel="apple-touch-icon" href="favicon.png">
+
+	<link rel="manifest" href="manifest.json">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+	<link rel="preconnect" href="https://unpkg.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'">
+
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Victor Guilarte",
+		"jobTitle": "Full-Stack .NET Developer",
+		"description": "Full-Stack .NET Developer specializing in enterprise financial systems, web applications, and cross-platform mobile development.",
+		"url": "https://victorguilarte.dev",
+		"image": "https://victorguilarte.dev/img/perfil.webp",
+		"email": "mailto:vaglegra91@gmail.com",
+		"telephone": "+5354791418",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Holguín",
+			"addressCountry": "CU"
+		},
+		"knowsAbout": [
+			".NET", "C#", "ASP.NET Core", "Angular", "Blazor", "Xamarin",
+			"SQL Server", "MySQL", "Entity Framework", "Azure", "AWS",
+			"JavaScript", "TypeScript", "REST APIs", "Scrum", "DevOps"
+		],
+		"alumniOf": {
+			"@type": "EducationalOrganization",
+			"name": "Universidad de Holguín"
+		},
+		"worksFor": {
+			"@type": "Organization",
+			"name": "Sifizsoft S.A"
+		},
+		"sameAs": [
+			"https://www.linkedin.com/in/victor-guilarte",
+			"https://github.com/vgl91"
+		]
+	}
+	</script>
 </head>
 <body>
+	<a class="skip-link" href="#main" data-text="nav_skip">Skip to main content</a>
 
-	<!---header--->
-	<header>
-		<a href="#" class="logo" aria-label="Home">
-			<img src="img/VAGL_logo2Mini.jpg" alt="Victor Guilarte Logo">
-		</a>
+	<header class="site-header" id="site-header">
+		<div class="container header-inner">
+			<a href="#home" class="logo" aria-label="Victor Guilarte — Home">
+				<img src="img/VAGL_logo2Mini.jpg" alt="VAGL" width="40" height="40" loading="eager">
+			</a>
 
-		<ul class="navbar">
-			<li><a href="#home" data-text="nav_home">Home</a></li>
-			<li><a href="#about" data-text="nav_about">About</a></li>
-			<li><a href="#experience" data-text="nav_experience">Experience</a></li>
-			<li><a href="#skills" data-text="nav_skills">Skills</a></li>
-			<li><a href="#portfolio" data-text="nav_portfolio">Portfolio</a></li>
-			<li><a href="#certifications" data-text="nav_certifications">Certifications</a></li>
-			<li><a href="#contact" data-text="nav_contact">Contact</a></li>
-		</ul>
+			<nav class="primary-nav" aria-label="Primary">
+				<ul class="navbar" id="primary-nav-list">
+					<li><a href="#home" data-text="nav_home">Home</a></li>
+					<li><a href="#about" data-text="nav_about">About</a></li>
+					<li><a href="#experience" data-text="nav_experience">Experience</a></li>
+					<li><a href="#skills" data-text="nav_skills">Skills</a></li>
+					<li><a href="#portfolio" data-text="nav_portfolio">Portfolio</a></li>
+					<li><a href="#certifications" data-text="nav_certifications">Certifications</a></li>
+					<li><a href="#contact" data-text="nav_contact">Contact</a></li>
+				</ul>
+			</nav>
 
-		<div id="flags" class="flags">
-			<div class="flags-item" title="English" data-lang="en">
-				<img src="img/gb.svg" alt="English Flag">
-			</div>
-			<div class="flags-item" title="Spanish" data-lang="es">
-				<img src="img/es.svg" alt="Spanish Flag">
+			<div class="header-actions">
+				<div class="flags" id="flags" role="group" aria-label="Language">
+					<button class="flags-item" data-lang="en" aria-label="English">
+						<img src="img/gb.svg" alt="" width="22" height="14" loading="lazy">
+					</button>
+					<button class="flags-item" data-lang="es" aria-label="Español">
+						<img src="img/es.svg" alt="" width="22" height="14" loading="lazy">
+					</button>
+				</div>
+
+				<button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle theme" type="button">
+					<i class='bx bx-moon' aria-hidden="true"></i>
+				</button>
+
+				<button class="icon-btn menu-toggle" id="menu-icon" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
+					<i class='bx bx-menu' aria-hidden="true"></i>
+				</button>
 			</div>
 		</div>
-		<div class="header-buttons">
-			<button id="theme-toggle" class="btn theme-toggle" aria-label="Toggle theme">
-				<i class='bx bx-moon'></i>
-			</button>
-		</div>
-
-		<button class="bx bx-menu" id="menu-icon" aria-label="Toggle menu"></button>
 	</header>
 
-	<!---home--->
-	<section class="home" id="home">
-		<div class="home-text">
-			<h4 data-text="home_greeting">Hello</h4>
-			<h1 data-text="home_title">I'm Victor<br><span data-text="home_subtitle">Guilarte</span></h1>
-			<h3 data-text="home_role">Software Developer</h3>
-			<a href="#contact" class="btn" data-text="home_cta_contact">Get in touch</a>
-			<a href="https://drive.google.com/drive/folders/1DG1HCHeixXGl8LHw0-L0pq3qbfsehbky?usp=sharing" target="_blank" class="btn" download data-text="home_cta_download">
-				<i class='bx bx-download'></i>
-				Download CV
-			</a>		
-		</div>
+	<main id="main">
 
-		<div class="tech-stack">
-			<div class="tech-item" title=".NET">
-				<i class="devicon-dotnetcore-plain colored"></i>
-				<span class="tech-name">.NET</span>
-			</div>
-			<div class="tech-item" title="C#">
-				<i class="devicon-csharp-plain colored"></i>
-				<span class="tech-name">C#</span>
-			</div>
-			<div class="tech-item" title="JavaScript">
-				<i class="devicon-javascript-plain colored"></i>
-				<span class="tech-name">JavaScript</span>
-			</div>
-			<div class="tech-item" title="HTML5">
-				<i class="devicon-html5-plain colored"></i>
-				<span class="tech-name">HTML5</span>
-			</div>
-			<div class="tech-item" title="Xamarin">
-				<i class="devicon-xamarin-original colored"></i>
-				<span class="tech-name">Xamarin</span>
-			</div>
-			<div class="tech-item" title="Angular">
-				<i class="devicon-angularjs-plain colored"></i>
-				<span class="tech-name">Angular</span>
-			</div>
-			<div class="tech-item" title="GitHub">
-				<i class="devicon-github-original"></i>
-				<span class="tech-name">GitHub</span>
-			</div>
-			<div class="tech-item" title="Blazor">
-				<i class="devicon-dot-net-plain colored"></i>
-				<span class="tech-name">Blazor</span>
-			</div>
-			<div class="tech-item" title="SQL Server">
-				<i class="devicon-microsoftsqlserver-plain colored"></i>
-				<span class="tech-name">SQL Server</span>
-			</div>
-		</div>			
-	</section>
+		<section class="home" id="home" aria-labelledby="home-title">
+			<div class="container home-grid">
+				<div class="home-text reveal">
+					<span class="availability" data-text="home_availability">Available for new opportunities</span>
+					<p class="greeting"><span data-text="home_greeting">Hi, I'm</span> <strong data-text="home_title">Victor Guilarte</strong>.</p>
+					<h1 id="home-title" class="hero-title">
+						<span data-text="home_role_1">I build</span>
+						<span class="hero-accent" data-text="home_role_2">enterprise software</span>
+						<span data-text="home_role_3">with .NET</span>
+					</h1>
+					<p class="hero-subtitle" data-text="home_subtitle">Full-Stack .NET Developer crafting financial and enterprise applications — from design to deployment, end to end.</p>
+					<div class="hero-cta">
+						<a href="#contact" class="btn btn-primary" data-text="home_cta_contact">Get in touch</a>
+						<a href="#portfolio" class="btn btn-ghost" data-text="home_cta_see_work">See my work</a>
+						<button type="button" class="btn btn-ghost" data-open-cv>
+							<i class='bx bx-download' aria-hidden="true"></i>
+							<span data-text="home_cta_download">Read CV</span>
+						</button>
+					</div>
+				</div>
 
-	<!---about--->
-	<section class="about" id="about">
-		<div class="about-img">
-			<div class="img-container">
-				<img src="img/perfil.png" alt="Victor Guilarte Profile Picture">
-				<div class="img-overlay"></div>
+				<div class="home-portrait reveal" aria-hidden="true">
+					<div class="portrait-frame">
+						<img src="img/perfil.webp" alt="" width="480" height="480" loading="eager" decoding="async">
+					</div>
+					<div class="portrait-stats" aria-hidden="true">
+						<div class="stat-bubble">
+							<span class="stat-value">.NET 8</span>
+							<span class="stat-label">Main stack</span>
+						</div>
+						<div class="stat-bubble stat-bubble-alt">
+							<span class="stat-value">1+ yr</span>
+							<span class="stat-label">Production</span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="about-text">
-			<h2 data-text="about_title">About Me</h2>
-			<h4 data-text="about_subtitle">Hi, I'm Here To Help Your Next Project</h4>
-			<p data-text="about_description">I am a Full-Stack developer with .Net, having 2 years of professional experience since 2023. I have participated in 
-				the design, development, and migration of enterprise systems, specializing in web financial applications, applying 
-				agile methodologies (Scrum) to ensure the rapid and efficient delivery of software solutions.  I possess skills to solve complex problems and 
-				effectively self-manage during independent projects, as well as collaborate efficiently as part of a team.
-				</p>
-			
-			<a href="mailto: vaglegra91@gmail.com" class="btn" data-text="about_cta">Contact Me</a>
-		</div>
-	</section>
-
-
-	<!---experience--->
-	<section class="experience" id="experience">
-		<div class="main-text">
-			<h2 data-text="experience_title">My Experience</h2>
-			<h4 data-text="experience_subtitle">Better Code, Better Experiences</h4>
-		</div>
-
-		<div class="experience-content">	
-			<div class="box">
-				<img src="img/serv2.png" alt="Software Development Icon">
-				<h3 data-text="experience_role">Software Developer at Sifizsoft S.A</h3>
-				<h5 data-text="experience_period">May, 2023 - Present</h5>
-				<ul class="experience-list">
-					<li data-text="experience_resp_1">Participated in the migration of the Enterprise Financial System to a web application, increasing system efficiency by 25%.</li>
-					<li data-text="experience_resp_2">Developed complex features and performed automated testing, ensuring software quality at 98%.</li>
-					<li data-text="experience_resp_3">Programmed updates based on detailed design specifications, improving system stability by 15%.</li>
-					<li data-text="experience_resp_4">Worked independently and as an enthusiastic team member, collaborating under a DevOps approach to ensure continuous delivery and scalability of applications.</li>
-					<li data-text="experience_resp_5">Provided support and maintenance for incidents in APIs, web, and mobile applications.</li>
-					<li data-text="experience_resp_6">Programmed new views and functionalities in mobile applications.</li>
+			<div class="container">
+				<ul class="tech-stack reveal" aria-label="Main technologies">
+					<li class="tech-item" title=".NET 8">
+						<i class="devicon-dotnetcore-plain colored" aria-hidden="true"></i>
+						<span class="tech-name">.NET</span>
+					</li>
+					<li class="tech-item" title="C#">
+						<i class="devicon-csharp-plain colored" aria-hidden="true"></i>
+						<span class="tech-name">C#</span>
+					</li>
+					<li class="tech-item" title="ASP.NET Core">
+						<i class="devicon-dot-net-plain colored" aria-hidden="true"></i>
+						<span class="tech-name">ASP.NET</span>
+					</li>
+					<li class="tech-item" title="Angular">
+						<i class="devicon-angularjs-plain colored" aria-hidden="true"></i>
+						<span class="tech-name">Angular</span>
+					</li>
+					<li class="tech-item" title="Blazor">
+						<i class="devicon-blazor-original colored" aria-hidden="true"></i>
+						<span class="tech-name">Blazor</span>
+					</li>
+					<li class="tech-item" title="JavaScript">
+						<i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+						<span class="tech-name">JavaScript</span>
+					</li>
+					<li class="tech-item" title="SQL Server">
+						<i class="devicon-microsoftsqlserver-plain colored" aria-hidden="true"></i>
+						<span class="tech-name">SQL Server</span>
+					</li>
+					<li class="tech-item" title="GitHub">
+						<i class="devicon-github-original" aria-hidden="true"></i>
+						<span class="tech-name">GitHub</span>
+					</li>
 				</ul>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!---skills--->
-	<section class="skills" id="skills">
-		<div class="main-text">
-			<h2 data-text="skills_title">My Skills</h2>
-			<h4 data-text="skills_subtitle">All for one and one for all</h4>
-		</div>
+		<section class="about" id="about" aria-labelledby="about-title">
+			<div class="container about-grid">
+				<div class="about-text reveal">
+					<span class="eyebrow" data-text="about_eyebrow">About</span>
+					<h2 id="about-title" data-text="about_title">From enterprise systems to mobile apps, I deliver end to end.</h2>
+					<p data-text="about_p1">I'm a Full-Stack .NET developer based in Holguín, Cuba, with hands-on experience building and migrating enterprise web applications for the financial sector.</p>
+					<p data-text="about_p2">I care about clean architecture, testable APIs, and code that other people can read at 2 a.m. when something breaks.</p>
 
-		<div class="experience-content">	
-			<div class="box">
-				<img src="img/serv2.png" alt="Software Development Icon">
-				<h3 data-text="skills_technical_title">Technical Skills</h3>
-				<ul class="experience-list">
-					<li data-text="skills_technical_1">Programming Languages: Javascript, C#</li>
-					<li data-text="skills_technical_2">Frameworks: ASP.Net Core, Angular, Blazor</li>
-					<li data-text="skills_technical_3">API Desing and Development	</li>
-					<li data-text="skills_technical_4">Database: SQL Server, MySQL</li>
-					<li data-text="skills_technical_5">Cloud Services: Azure, AWS</li>
-					<li data-text="skills_technical_6">Version Control: Git, GitHub</li>
-					<li data-text="skills_technical_7">Agile Methodologies: Scrum</li>
-				</ul>
-				<h3 data-text="skills_soft_title">Soft Skills</h3>
-				<ul class="experience-list">
-					<li data-text="skills_soft_1">Proactivity</li>
-					<li data-text="skills_soft_2">Teamwork</li>
-					<li data-text="skills_soft_3">Communication</li>
-					<li data-text="skills_soft_4">Problem Solving</li>
-					<li data-text="skills_soft_5">Adaptability</li>
-					<li data-text="skills_soft_6">Time Management</li>
-				</ul>
+					<dl class="about-stats">
+						<div>
+							<dt data-text="about_stat_years_value">1+</dt>
+							<dd data-text="about_stat_years_label">Years professional experience</dd>
+						</div>
+						<div>
+							<dt data-text="about_stat_projects_value">6+</dt>
+							<dd data-text="about_stat_projects_label">Projects shipped to production</dd>
+						</div>
+						<div>
+							<dt data-text="about_stat_quality_value">98%</dt>
+							<dd data-text="about_stat_quality_label">Code quality maintained</dd>
+						</div>
+					</dl>
+
+					<a href="#contact" class="btn btn-primary" data-text="about_cta">Let's talk</a>
+				</div>
 			</div>
-		</div>
-	</section>
-	<!---portfolio--->
-	<section class="portfolio" id="portfolio">
-		<div class="main-text">
-			<h2 data-text="portfolio_title">My Portfolio</h2>
-			<h4 data-text="portfolio_subtitle">Some Of My Distinguished Works</h4>
-		</div>
+		</section>
 
-		<div class="portfolio-content">
-			<div class="row">
-				<img src="img/portfolio1.jpg">
-				<div class="main-row">
-					<div class="row-text">
-						<h6 data-text="portfolio_project_1_category">Development</h6>
-					</div>
-					<div class="row-icon">
-						<i class='bx bx-heart'></i>
+		<section class="experience" id="experience" aria-labelledby="experience-title">
+			<div class="container">
+				<header class="section-head reveal">
+					<span class="eyebrow" data-text="experience_eyebrow">Experience</span>
+					<h2 id="experience-title" data-text="experience_title">Where I've worked</h2>
+					<p class="section-subtitle" data-text="experience_subtitle">Production code, real deadlines, real impact.</p>
+				</header>
+
+				<div class="timeline reveal">
+					<article class="timeline-item">
+						<header class="timeline-head">
+							<div>
+								<h3 data-text="experience_role">Software Developer</h3>
+								<p class="timeline-company" data-text="experience_company">Sifizsoft S.A</p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-period" data-text="experience_period">May 2023 — Present</span>
+								<span class="timeline-location" data-text="experience_location">Cuba · Hybrid</span>
+							</div>
+						</header>
+						<ul class="timeline-list">
+							<li>
+								<span data-text="experience_resp_1">Migrated an enterprise financial system from desktop to a web application, improving system efficiency by 25%.</span>
+								<span class="tag-list">
+									<span class="tag">.NET</span>
+									<span class="tag">ASP.NET Core</span>
+									<span class="tag">SQL Server</span>
+								</span>
+							</li>
+							<li>
+								<span data-text="experience_resp_2">Developed complex business features and wrote automated tests, maintaining 98% software quality.</span>
+								<span class="tag-list">
+									<span class="tag">C#</span>
+									<span class="tag">xUnit</span>
+									<span class="tag">CI/CD</span>
+								</span>
+							</li>
+							<li>
+								<span data-text="experience_resp_3">Implemented updates from detailed design specs, increasing system stability by 15%.</span>
+								<span class="tag-list">
+									<span class="tag">Angular</span>
+									<span class="tag">TypeScript</span>
+									<span class="tag">RxJS</span>
+								</span>
+							</li>
+							<li>
+								<span data-text="experience_resp_4">Collaborated under a DevOps approach to ensure continuous delivery and horizontal scalability.</span>
+								<span class="tag-list">
+									<span class="tag">Azure DevOps</span>
+									<span class="tag">Docker</span>
+									<span class="tag">Scrum</span>
+								</span>
+							</li>
+							<li>
+								<span data-text="experience_resp_5">Provided L2/L3 support and incident maintenance for REST APIs, web apps, and mobile clients.</span>
+								<span class="tag-list">
+									<span class="tag">REST APIs</span>
+									<span class="tag">Xamarin</span>
+									<span class="tag">Blazor</span>
+								</span>
+							</li>
+							<li>
+								<span data-text="experience_resp_6">Built new views and end-to-end features in cross-platform mobile applications.</span>
+								<span class="tag-list">
+									<span class="tag">Xamarin.Forms</span>
+									<span class="tag">MVVM</span>
+									<span class="tag">REST</span>
+								</span>
+							</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="skills" id="skills" aria-labelledby="skills-title">
+			<div class="container">
+				<header class="section-head reveal">
+					<span class="eyebrow" data-text="skills_eyebrow">Stack</span>
+					<h2 id="skills-title" data-text="skills_title">What I work with</h2>
+					<p class="section-subtitle" data-text="skills_subtitle">Tools I reach for daily, and the ones I keep sharpening.</p>
+				</header>
+
+				<div class="skills-grid reveal">
+					<article class="skill-category">
+						<h3 data-text="skills_category_backend">Backend</h3>
+						<ul class="skill-list">
+							<li><span class="skill-name" data-text="skills_dotnet">.NET 8</span><span class="skill-level" data-text="skills_dotnet_level">Advanced</span></li>
+							<li><span class="skill-name" data-text="skills_csharp">C#</span><span class="skill-level" data-text="skills_csharp_level">Advanced</span></li>
+							<li><span class="skill-name" data-text="skills_aspnet">ASP.NET Core</span><span class="skill-level" data-text="skills_aspnet_level">Advanced</span></li>
+							<li><span class="skill-name" data-text="skills_restapi">REST APIs</span><span class="skill-level" data-text="skills_restapi_level">Advanced</span></li>
+						</ul>
+					</article>
+
+					<article class="skill-category">
+						<h3 data-text="skills_category_frontend">Frontend</h3>
+						<ul class="skill-list">
+							<li><span class="skill-name" data-text="skills_angular">Angular</span><span class="skill-level" data-text="skills_angular_level">Intermediate</span></li>
+							<li><span class="skill-name" data-text="skills_blazor">Blazor</span><span class="skill-level" data-text="skills_blazor_level">Intermediate</span></li>
+							<li><span class="skill-name" data-text="skills_javascript">JavaScript</span><span class="skill-level" data-text="skills_javascript_level">Intermediate</span></li>
+							<li><span class="skill-name" data-text="skills_htmlcss">HTML & CSS</span><span class="skill-level" data-text="skills_htmlcss_level">Advanced</span></li>
+						</ul>
+					</article>
+
+					<article class="skill-category">
+						<h3 data-text="skills_category_data">Data</h3>
+						<ul class="skill-list">
+							<li><span class="skill-name" data-text="skills_sqlserver">SQL Server</span><span class="skill-level" data-text="skills_sqlserver_level">Advanced</span></li>
+							<li><span class="skill-name" data-text="skills_mysql">MySQL</span><span class="skill-level" data-text="skills_mysql_level">Intermediate</span></li>
+							<li><span class="skill-name" data-text="skills_entityframework">Entity Framework</span><span class="skill-level" data-text="skills_entityframework_level">Advanced</span></li>
+						</ul>
+					</article>
+
+					<article class="skill-category">
+						<h3 data-text="skills_category_cloud">Cloud & Tools</h3>
+						<ul class="skill-list">
+							<li><span class="skill-name" data-text="skills_azure">Azure</span><span class="skill-level" data-text="skills_azure_level">Intermediate</span></li>
+							<li><span class="skill-name" data-text="skills_aws">AWS</span><span class="skill-level" data-text="skills_aws_level">Basic</span></li>
+							<li><span class="skill-name" data-text="skills_git">Git & GitHub</span><span class="skill-level" data-text="skills_git_level">Advanced</span></li>
+							<li><span class="skill-name" data-text="skills_scrum">Scrum</span><span class="skill-level" data-text="skills_scrum_level">Advanced</span></li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+			<div class="container">
+				<header class="section-head reveal">
+					<span class="eyebrow" data-text="portfolio_eyebrow">Work</span>
+					<h2 id="portfolio-title" data-text="portfolio_title">Selected projects</h2>
+					<p class="section-subtitle" data-text="portfolio_subtitle">Case studies of systems I've designed and built.</p>
+				</header>
+
+				<div class="portfolio-grid reveal">
+					<article class="project-card">
+						<div class="project-thumb" data-gradient="ember">
+							<span class="project-status" data-text="portfolio_project_1_status">Case study</span>
+							<div class="project-thumb-overlay" aria-hidden="true">
+								<i class='bx bx-code-alt'></i>
+							</div>
+						</div>
+						<div class="project-body">
+							<p class="project-category" data-text="portfolio_project_1_category">Backend · Fintech</p>
+							<h3 data-text="portfolio_project_1_title">BankFlow API</h3>
+							<p class="project-description" data-text="portfolio_project_1_description">REST API for a regional bank handling 50k+ daily transactions with JWT auth, rate limiting, and OpenAPI documentation.</p>
+							<p class="project-features" data-text="portfolio_project_1_features">JWT auth · Rate limiting · OpenAPI · CI/CD</p>
+							<p class="project-stack" data-text="portfolio_project_1_stack">.NET 8, ASP.NET Core, SQL Server, EF Core, Azure</p>
+							<div class="project-actions">
+								<span class="project-action disabled" data-text="portfolio_action_unavailable">Coming soon</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-thumb" data-gradient="slate">
+							<span class="project-status" data-text="portfolio_project_2_status">Case study</span>
+							<div class="project-thumb-overlay" aria-hidden="true">
+								<i class='bx bx-mobile-alt'></i>
+							</div>
+						</div>
+						<div class="project-body">
+							<p class="project-category" data-text="portfolio_project_2_category">Mobile · Retail</p>
+							<h3 data-text="portfolio_project_2_title">StockSync Mobile</h3>
+							<p class="project-description" data-text="portfolio_project_2_description">Cross-platform inventory app with barcode scanning, real-time sync, and a full offline mode for retail chains.</p>
+							<p class="project-features" data-text="portfolio_project_2_features">Barcode scanner · Offline-first · Real-time sync</p>
+							<p class="project-stack" data-text="portfolio_project_2_stack">.NET MAUI, Blazor, SQLite, REST</p>
+							<div class="project-actions">
+								<span class="project-action disabled" data-text="portfolio_action_unavailable">Coming soon</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-thumb" data-gradient="violet">
+							<span class="project-status" data-text="portfolio_project_3_status">Case study</span>
+							<div class="project-thumb-overlay" aria-hidden="true">
+								<i class='bx bx-layout'></i>
+							</div>
+						</div>
+						<div class="project-body">
+							<p class="project-category" data-text="portfolio_project_3_category">Full-stack · SaaS</p>
+							<h3 data-text="portfolio_project_3_title">TaskForge Dashboard</h3>
+							<p class="project-description" data-text="portfolio_project_3_description">Agile project management tool with real-time Kanban, time tracking, and SignalR-powered live updates.</p>
+							<p class="project-features" data-text="portfolio_project_3_features">Kanban board · Real-time updates · Time tracking</p>
+							<p class="project-stack" data-text="portfolio_project_3_stack">Angular, .NET Core, SignalR, PostgreSQL</p>
+							<div class="project-actions">
+								<span class="project-action disabled" data-text="portfolio_action_unavailable">Coming soon</span>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="certifications" id="certifications" aria-labelledby="certifications-title">
+			<div class="container">
+				<header class="section-head reveal">
+					<span class="eyebrow" data-text="certifications_eyebrow">Credentials</span>
+					<h2 id="certifications-title" data-text="certifications_title">Certifications</h2>
+					<p class="section-subtitle" data-text="certifications_subtitle">Continuous learning, documented.</p>
+				</header>
+
+				<div class="cert-grid reveal">
+					<article class="cert-card">
+						<div class="cert-platform" data-text="certification_1_platform">freeCodeCamp</div>
+						<h3 data-text="certification_1_title">Foundational C# with Microsoft</h3>
+						<time class="cert-date" data-text="certification_1_date">2024</time>
+						<a href="https://freecodecamp.org/certification/fcc732d1744-b5b4-439f-9c80-f657af7e39a6/foundational-c-sharp-with-microsoft" target="_blank" rel="noopener noreferrer" class="cert-link">
+							<span data-text="certification_action">View certificate</span>
+							<i class='bx bx-link-external' aria-hidden="true"></i>
+						</a>
+					</article>
+
+					<article class="cert-card">
+						<div class="cert-platform" data-text="certification_2_platform">Platzi</div>
+						<h3 data-text="certification_2_title">Basic Programming</h3>
+						<time class="cert-date" data-text="certification_2_date">2024</time>
+						<a href="https://platzi.com/p/victorguilarte91/curso/3208-programacion-basica/diploma/detalle/" target="_blank" rel="noopener noreferrer" class="cert-link">
+							<span data-text="certification_action">View certificate</span>
+							<i class='bx bx-link-external' aria-hidden="true"></i>
+						</a>
+					</article>
+
+					<article class="cert-card">
+						<div class="cert-platform" data-text="certification_3_platform">Platzi</div>
+						<h3 data-text="certification_3_title">.NET Fundamentals</h3>
+						<time class="cert-date" data-text="certification_3_date">2024</time>
+						<a href="https://platzi.com/p/victorguilarte91/curso/2883-fundamentos-net/diploma/detalle/" target="_blank" rel="noopener noreferrer" class="cert-link">
+							<span data-text="certification_action">View certificate</span>
+							<i class='bx bx-link-external' aria-hidden="true"></i>
+						</a>
+					</article>
+
+					<article class="cert-card">
+						<div class="cert-platform" data-text="certification_4_platform">Platzi</div>
+						<h3 data-text="certification_4_title">Introduction to C# with .NET 3.1</h3>
+						<time class="cert-date" data-text="certification_4_date">2024</time>
+						<a href="https://platzi.com/p/victorguilarte91/curso/2198-csharp-introduccion/diploma/detalle/" target="_blank" rel="noopener noreferrer" class="cert-link">
+							<span data-text="certification_action">View certificate</span>
+							<i class='bx bx-link-external' aria-hidden="true"></i>
+						</a>
+					</article>
+
+					<article class="cert-card">
+						<div class="cert-platform" data-text="certification_5_platform">CertiProf</div>
+						<h3 data-text="certification_5_title">Scrum Foundation Professional (SFPC)</h3>
+						<time class="cert-date" data-text="certification_5_date">2024</time>
+						<a href="https://drive.google.com/file/d/1vxllvvs85t7UU7hicXu6utk2wFNKIHNn/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="cert-link">
+							<span data-text="certification_action">View certificate</span>
+							<i class='bx bx-link-external' aria-hidden="true"></i>
+						</a>
+					</article>
+
+					<article class="cert-card">
+						<div class="cert-platform" data-text="certification_6_platform">EF Standard</div>
+						<h3 data-text="certification_6_title">EFSET English C1 Advanced · 67/100</h3>
+						<time class="cert-date" data-text="certification_6_date">2025</time>
+						<a href="https://www.efset.org/cert/GFhr7J" target="_blank" rel="noopener noreferrer" class="cert-link">
+							<span data-text="certification_action">View certificate</span>
+							<i class='bx bx-link-external' aria-hidden="true"></i>
+						</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact" aria-labelledby="contact-title">
+			<div class="container contact-grid">
+				<div class="contact-info reveal">
+					<span class="eyebrow" data-text="contact_eyebrow">Contact</span>
+					<h2 id="contact-title" data-text="contact_title">Let's build something useful.</h2>
+					<p class="contact-subtitle" data-text="contact_subtitle">I'm open to full-time roles, freelance projects, and interesting collaborations.</p>
+					<p class="contact-reply" data-text="contact_reply">I usually reply within 24 hours.</p>
+
+					<dl class="contact-list">
+						<div class="contact-item">
+							<dt><i class='bx bx-map' aria-hidden="true"></i><span data-text="contact_location_label">Location</span></dt>
+							<dd>
+								<a href="https://www.google.com/maps/place/Holgu%C3%ADn" target="_blank" rel="noopener noreferrer" data-text="contact_location_value">Holguín, Cuba</a>
+							</dd>
+						</div>
+						<div class="contact-item">
+							<dt><i class='bx bx-envelope' aria-hidden="true"></i><span data-text="contact_email_label">Email</span></dt>
+							<dd class="email-row">
+								<a href="mailto:vaglegra91@gmail.com" class="email-link">vaglegra91@gmail.com</a>
+								<button type="button" class="copy-btn" id="copy-email" aria-label="Copy email">
+									<i class='bx bx-copy' aria-hidden="true"></i>
+									<span data-text="contact_email_action">Copy</span>
+								</button>
+							</dd>
+						</div>
+						<div class="contact-item">
+							<dt><i class='bx bx-phone' aria-hidden="true"></i><span data-text="contact_phone_label">Phone</span></dt>
+							<dd><a href="tel:+5354791418" data-text="contact_phone_value">+53 5479 1418</a></dd>
+						</div>
+					</dl>
+
+					<div class="contact-socials">
+						<span class="contact-socials-label" data-text="contact_social_label">Find me on</span>
+						<a href="https://www.linkedin.com/in/victor-guilarte" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class='bx bxl-linkedin' aria-hidden="true"></i></a>
+						<a href="https://github.com/vgl91" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class='bx bxl-github' aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<h3 data-text="portfolio_project_1_title">Mobile app landing design & Services</h3>
-			</div>
 
-			<div class="row">
-				<img src="img/portfolio2.jpg">
-				<div class="main-row">
-					<div class="row-text">
-						<h6 data-text="portfolio_project_2_category">Development</h6>
+				<form id="contactForm" class="contact-form reveal" novalidate>
+					<div class="field">
+						<input type="text" id="name" name="name" required autocomplete="name" placeholder=" ">
+						<label for="name" data-text="contact_form_name">Name</label>
 					</div>
-					<div class="row-icon">
-						<i class='bx bx-heart'></i>
+					<div class="field">
+						<input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+						<label for="email" data-text="contact_form_email">Email</label>
 					</div>
-				</div>
-				<h3 data-text="portfolio_project_2_title">Mobile app landing design & Services</h3>
+					<div class="field">
+						<input type="text" id="subject" name="subject" placeholder=" ">
+						<label for="subject" data-text="contact_form_subject">Subject</label>
+					</div>
+					<div class="field">
+						<textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+						<label for="message" data-text="contact_form_message">Message</label>
+					</div>
+					<button type="submit" class="btn btn-primary btn-block" id="contact-submit">
+						<span class="btn-label" data-text="contact_form_submit">Send message</span>
+						<i class='bx bx-send' aria-hidden="true"></i>
+					</button>
+					<p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+				</form>
 			</div>
+		</section>
+	</main>
 
-			<div class="row">
-				<img src="img/portfolio3.jpg">
-				<div class="main-row">
-					<div class="row-text">
-						<h6 data-text="portfolio_project_3_category">Development</h6>
-					</div>
-					<div class="row-icon">
-						<i class='bx bx-heart'></i>
-					</div>
-				</div>
-				<h3 data-text="portfolio_project_3_title">Mobile app landing design & Services</h3>
-			</div>
-
-			<div class="row">
-				<img src="img/portfolio4.jpg">
-				<div class="main-row">
-					<div class="row-text">
-						<h6 data-text="portfolio_project_4_category">Development</h6>
-					</div>
-					<div class="row-icon">
-						<i class='bx bx-heart'></i>
-					</div>
-				</div>
-				<h3 data-text="portfolio_project_4_title">Mobile app landing design & Services</h3>
-			</div>
-
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>
+				<span data-text="footer_copyright">Designed and built by Victor Guilarte.</span>
+				<span class="footer-dot">·</span>
+				<span data-text="footer_rights">All rights reserved.</span>
+				<span class="footer-dot">·</span>
+				<span id="current-year">2026</span>
+			</p>
+			<button type="button" class="cv-link" data-open-cv>
+				<i class='bx bx-file-blank' aria-hidden="true"></i>
+				<span data-text="home_cta_download">Read CV</span>
+			</button>
 		</div>
-	</section>
+	</footer>
 
-	<!---certifications--->
-	<section class="certifications" id="certifications">
-		<div class="main-text">
-			<h2 data-text="certifications_title">My Certifications</h2>
-			<h4 data-text="certifications_subtitle">Enjoying the trip</h4>
+	<a href="#home" class="scroll-top" aria-label="Scroll to top">
+		<i class='bx bx-up-arrow-alt' aria-hidden="true"></i>
+	</a>
+
+	<div id="cv-modal" class="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title" hidden>
+		<div class="cv-modal-overlay" data-close-cv></div>
+		<div class="cv-modal-content">
+			<header class="cv-modal-header">
+				<h3 id="cv-modal-title" data-text="cv_modal_title">Curriculum Vitae</h3>
+				<button class="icon-btn cv-modal-close" id="cv-modal-close" aria-label="Close CV preview" type="button" data-close-cv>
+					<i class='bx bx-x' aria-hidden="true"></i>
+				</button>
+			</header>
+			<iframe src="assets/pdf/cv-victor-guilarte.pdf" title="Victor Guilarte CV" class="cv-frame"></iframe>
+			<footer class="cv-modal-footer">
+				<a href="assets/pdf/cv-victor-guilarte.pdf" download class="btn btn-primary">
+					<i class='bx bx-download' aria-hidden="true"></i>
+					<span data-text="cv_modal_download">Download PDF</span>
+				</a>
+			</footer>
 		</div>
-
-		<div class="experience-content">	
-			<div class="box">
-				<img src="img/serv1.png" alt="Software Development Icon">
-				<h3 data-text="certifications_title">Certifications</h3>
-				<ul class="experience-list">
-					<li><a href="https://freecodecamp.org/certification/fcc732d1744-b5b4-439f-9c80-f657af7e39a6/foundational-c-sharp-with-microsoft" target="_blank">Foundational C# with Microsoft</a></li>
-					<li><a href="https://platzi.com/p/victorguilarte91/curso/3208-programacion-basica/diploma/detalle/" target="_blank">Curso Gratis de Programación Básica</a></li>
-					<li><a href="https://platzi.com/p/victorguilarte91/curso/2883-fundamentos-net/diploma/detalle/" target="_blank">Curso de Fundamentos de .NET</a></li>
-					<li><a href="https://platzi.com/p/victorguilarte91/curso/2198-csharp-introduccion/diploma/detalle/" target="_blank">Curso de Introducción a C# con .NET 3.1</a></li>
-					<li><a href="https://drive.google.com/file/d/1vxllvvs85t7UU7hicXu6utk2wFNKIHNn/view?usp=drivesdk" target="_blank">Scrum Foundation Professional Certification SFPC</a></li>
-					<li><a href="efset.org/cert/GFhr7J" target="_blank">EFSET English Certificate 67/100 (C1 Advanced)</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<!---contact--->
-	<section class="contact" id="contact">
-		<div class="contact-text">
-			<h2 data-text="contact_title">Contact Me</h2>
-			<h4 data-text="contact_subtitle">Let's Work Together</h4>
-			<p data-text="contact_description">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry</p>
-			<div class="contact-list">
-				<li><a href="https://www.google.com/maps/place/Holgu%C3%ADn/@20.8966059,-76.2624979,13z/data=!3m1!4b1!4m5!3m4!1s0x8ecded6850f45db9:0x30fd21580649f887!8m2!3d20.8795129!4d-76.2594981" target="_blank">Holguín - Cuba</a></li>
-				<li><a href="mailto: vaglegra91@gmail.com">vaglegra91@gmail.com</a></li>
-				<li><a href="tel: +5354791418">+53-54791418</a></li>
-			</div>
-			<div class="contact-icons">
-				<a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-				<a href="https://github.com/vgl91" target="_blank"><i class='bx bxl-github' ></i></a>
-			</div>
-		</div>
-
-		<div class="contact-form">
-			<form id="contactForm" class="contact-form">
-				<div class="form-group">
-					<label for="name" class="visually-hidden" data-text="contact_form_name">Name</label>
-					<input type="text" id="name" name="name" data-text="contact_form_name_placeholder" placeholder="Enter Your Name" required>
-				</div>
-				
-				<div class="form-group">
-					<label for="email" class="visually-hidden" data-text="contact_form_email">Email</label>
-					<input type="email" id="email" name="email" data-text="contact_form_email_placeholder" placeholder="Enter Your Email" required>
-				</div>
-				
-				<div class="form-group">
-					<label for="subject" class="visually-hidden" data-text="contact_form_subject">Subject</label>
-					<input type="text" id="subject" name="subject" data-text="contact_form_subject_placeholder" placeholder="Enter Your Subject">
-				</div>
-				
-				<div class="form-group">
-					<label for="message" class="visually-hidden" data-text="contact_form_message">Message</label>
-					<textarea id="message" name="message" cols="40" rows="10" data-text="contact_form_message_placeholder" placeholder="Enter Your Message" required></textarea>
-				</div>
-				
-				<button type="submit" class="btn" data-text="contact_form_submit">Submit</button>
-			</form>
-		</div>
-	</section>
-
-	<div class="last-text">
-		<p data-text="footer_copyright">Developed by Victor Guilarte © <span id="current-year">2022</span></p>
 	</div>
 
-	<!---scroll-top--->
-	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
-
-	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script src="https://unpkg.com/scrollreveal"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+	<script src="js/script.js" defer></script>
 </body>
 </html>

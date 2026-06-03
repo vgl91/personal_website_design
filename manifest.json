@@ -1,0 +1,33 @@
+{
+  "name": "Victor Guilarte — .NET Full-Stack Developer",
+  "short_name": "V. Guilarte",
+  "description": "Portfolio of Victor Guilarte, Full-Stack .NET Developer specialized in enterprise financial applications.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0f",
+  "theme_color": "#e94e4e",
+  "lang": "en",
+  "categories": ["developer", "portfolio", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
